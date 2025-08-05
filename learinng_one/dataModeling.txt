@@ -1,8 +1,10 @@
 Which tool tool to be used in data modeling
 --> Moon Modeler or app.eraser.io
 
+When creating project -> prettier (for better workflow)
 
 
+when installing any thing but u want this only devlopment not on render side use (-D)
 
 
 
