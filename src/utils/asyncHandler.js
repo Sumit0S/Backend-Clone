@@ -1,11 +1,11 @@
-import { error } from "console";
-
-const asyncHandler= async(requesthandler)=>
-{
-    (req,res,next)=>{
-        Promise.resolve(requesthandler(req,res,next)).catch((err)=>next(err))
+const asyncHandler = (requestHandler) => {
+    return(req, res, next) => {
+        Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err))
     }
 }
+
+
+export default asyncHandler
 
 
 // const asyncHandler=()=>{}
@@ -23,6 +23,6 @@ const asyncHandler= async(requesthandler)=>
 
 
 
-export default asyncHandler;
+
 
 
