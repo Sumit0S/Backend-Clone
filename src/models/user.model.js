@@ -99,7 +99,7 @@ userSchema.methods.generateAccessToken = function(){
         {
             expiresIn: process.env.ACCESS_TOKEN_EXPIRY
         }
-        
+
     )
 }
 userSchema.methods.generateRefreshToken = function(){
@@ -114,4 +114,6 @@ userSchema.methods.generateRefreshToken = function(){
         }
     )
 }
+
+
 export const User=mongoose.model("User",userSchema);
